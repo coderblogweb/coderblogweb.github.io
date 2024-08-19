@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2023 - Coder Blog
+ * copyright 2024 - Coder Blog
  */
 
 
@@ -400,7 +400,7 @@ body.active { overflow: hidden; }
 .header.active {
   background: var(--eerie-black);
   padding-block: 20px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .header .container {
