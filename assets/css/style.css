@@ -398,7 +398,7 @@ body.active { overflow: hidden; }
 }
 
 .header.active {
-  background: var(--eerie-black);
+  background: black; /* var(--eerie-black) */
   padding-block: 20px;
   opacity: 95%;
 }
