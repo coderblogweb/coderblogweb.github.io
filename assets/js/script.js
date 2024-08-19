@@ -57,7 +57,7 @@ window.addEventListener("scroll", function () {
  * Contact Form Script
  */
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxDJF2M4PpjjtTCkSn0CO6jnmsMNQw3xojDtEEk9MtYiNoQ9X9dlHvaOq05CDz_tM8/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwGZwnDjhf0hWyDLs4xs1LqKECbI0h-D1-2qUCMsjzGtc6B3JFN5rGBpHO7mt3TXD0/exec';
 
 const form = document.forms['submit-to-google-sheet'];
 
@@ -69,7 +69,7 @@ form.addEventListener('submit', e => {
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
-      msg.innerHTML = "Message Sent!!"
+      msg.innerHTML = "Successfully Subscribed!"
     })
 
     setTimeout(function() {
