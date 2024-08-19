@@ -78,3 +78,13 @@ form.addEventListener('submit', e => {
     form.reset()
     .catch(error => console.error('Error!', error.message))
 });
+
+
+
+/**
+ * Get Year
+ */
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("year").innerHTML = year;
