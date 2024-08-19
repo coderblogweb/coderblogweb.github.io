@@ -249,8 +249,8 @@ body.active { overflow: hidden; }
 .btn-primary { background: var(--rich-black-fogra-29); }
 
 .btn-primary:is(:hover, :focus) {
-  background: var(--citrine);
-  color: var(--xiketic);
+  background: white; /* var(--citrine) */
+  color: black; /* var(--xiketic) */
 }
 
 .btn-search { background: rgb(54, 54, 54); }
@@ -398,7 +398,7 @@ body.active { overflow: hidden; }
 }
 
 .header.active {
-  background: black; /* var(--eerie-black) */
+  background: #7952B3; /* var(--eerie-black) */
   padding-block: 20px;
   opacity: 95%;
 }
@@ -465,7 +465,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--citrine); }
+.navbar-link:is(:hover, :focus) { color: rgb(218, 218, 218); } /* var(--citrine) */
 
 .navbar-social-list {
   display: flex;
