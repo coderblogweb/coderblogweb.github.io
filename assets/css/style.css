@@ -400,6 +400,7 @@ body.active { overflow: hidden; }
 .header.active {
   background: var(--eerie-black);
   padding-block: 20px;
+  opacity: 0.9;
 }
 
 .header .container {
