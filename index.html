@@ -1,225 +1,460 @@
 <!DOCTYPE html>
-<!-- Developed By A.H. Abir (Ashfaque Hossain Abir) -->
+<!-- 
+---- Developed By A.H. Abir (Ashfaque Hossain Abir) 
+-->
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Coder Blog | The Tech Expert">
+    <meta name="description" content="Hi, I'm a Web Developer, Graphic Designer and Content Writer based in Bangladesh. I love to provide awesome services to my lovely clients. Hire me now!">
+    <meta property="og:image" content="images/blogs_preview_1.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://coderblogweb.github.io"/>
+    <meta property="og:title" content="Coder Blog | The Tech Expert" />
+    <meta property="og:description" content="Hi, I'm a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!"/>
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://coderblogweb.github.io">
+    <meta property="twitter:title" content="Coder Blog | The Tech Expert">
+    <meta property="twitter:description" content="Hi, I'm a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!">
+    <meta property="twitter:image" content="images/blogs_preview_1.png">
 
-  <meta name="title" content="Coder Blog | The Tech Expert">
-  <meta name="description" content="Hi, I'm a Web Developer, Graphic Designer and Content Writer based in Bangladesh. I love to provide awesome services to my lovely clients. Hire me now!">
-  <meta property="og:image" content="images/blogs_preview_1.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://coderblogweb.github.io"/>
-  <meta property="og:title" content="Coder Blog | The Tech Expert" />
-  <meta property="og:description" content="Hi, I'm a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!"/>
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://coderblogweb.github.io">
-  <meta property="twitter:title" content="Coder Blog | The Tech Expert">
-  <meta property="twitter:description" content="Hi, I'm a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!">
-  <meta property="twitter:image" content="images/blogs_preview_1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Blog | The Tech Expert</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coder Blog | The Tech Expert</title>
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/images/fav_icon.png" type="image/x-icon">
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/fav_icon.png" type="image/x-icon">
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+  <body id="top">
 
-<body id="top">
+    <!-- 
+      - #HEADER
+    -->
 
-  <!-- 
-    - #HEADER
-  -->
+    <header class="header" data-header>
+      <div class="container">
 
-  <header class="header" data-header>
-    <div class="container">
+        <div class="overlay" data-overlay></div>
 
-      <div class="overlay" data-overlay></div>
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/fav_icon.png" height="58" width="58" alt="Coder Blog">
+        </a>
 
-      <a href="./index.html" class="logo">
-        <img src="./assets/images/fav_icon.png" height="58" width="58" alt="Coder Blog">
-      </a>
+        <div class="header-actions">
 
-      <div class="header-actions">
+          <div class="lang-wrapper">
+            <label for="language">
+              <ion-icon name="globe-outline"></ion-icon>
+            </label>
 
-        <div class="lang-wrapper">
-          <label for="language">
-            <ion-icon name="globe-outline"></ion-icon>
-          </label>
+            <select name="language" id="language">
+              <option value="en">EN</option>
+              <option value="au">AU</option>
+              <option value="ar">AR</option>
+              <option value="tu">TU</option>
+            </select>
+          </div>
 
-          <select name="language" id="language">
-            <option value="en">EN</option>
-            <option value="au">AU</option>
-            <option value="ar">AR</option>
-            <option value="tu">TU</option>
-          </select>
-        </div>
-
-        <button onclick="location.href='https://coderblogweb.github.io/quiz/'" class="btn btn-primary">Play Quiz</button>
-
-      </div>
-
-      <button class="menu-open-btn" data-menu-open-btn>
-        <ion-icon name="reorder-two"></ion-icon>
-      </button>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-
-          <a href="./index.html" class="logo">
-            <img src="./assets/images/fav_icon.png" height="58" width="58" alt="Coder Blog">
-          </a>
-
-          <button class="menu-close-btn" data-menu-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
+          <button onclick="location.href='https://coderblogweb.github.io/quiz/'" class="btn btn-primary">Play Quiz</button>
 
         </div>
 
-        <ul class="navbar-list">
+        <button class="menu-open-btn" data-menu-open-btn>
+          <ion-icon name="reorder-two"></ion-icon>
+        </button>
 
-          <li>
-            <a href="#" class="navbar-link">Home</a>
-          </li>
+        <nav class="navbar" data-navbar>
 
-          <li>
-            <a href="https://ashfaquehossainabir.github.io/my-cv/" class="navbar-link">About</a>
-          </li>
+          <div class="navbar-top">
 
-          <li>
-            <a href="https://ashfaquehossainabir.github.io/" class="navbar-link">Portfolio</a>
-          </li>
-
-          <li>
-            <a href="https://coderblogweb.github.io/my-blogs/" class="navbar-link">Blog</a>
-          </li>
-
-          <li>
-            <a href="https://coderblogweb.github.io/contact/" class="navbar-link">Contact</a>
-          </li>
-
-        </ul>
-
-        <ul class="navbar-social-list">
-
-          <li>
-            <a href="https://twitter.com/ashfaquertc70" class="navbar-social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="./index.html" class="logo">
+              <img src="./assets/images/fav_icon.png" height="58" width="58" alt="Coder Blog">
             </a>
-          </li>
 
-          <li>
-            <a href="https://www.facebook.com/ashfaquertx" class="navbar-social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/ashfaque-hossain-91151723b/" class="navbar-social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.instagram.com/tesszedox/" class="navbar-social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.youtube.com/channel/UCOPh7wtyJgve_YknUFXp0HA/about" class="navbar-social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <p class="hero-subtitle">Coder Blog</p>
-
-            <h1 class="h1 hero-title">
-              The <strong>Tech</strong> Expert
-            </h1>
-
-            <div class="meta-wrapper">
-
-              <div class="badge-wrapper">
-                <div class="badge badge-fill">HTML</div>
-
-                <div class="badge badge-outline">CSS</div>
-
-                <div class="badge badge-fill">Javascript</div>
-
-                <div class="badge badge-outline">PHP</div>
-              </div>
-
-            </div>
-
-            <button onclick="location.href='https://coderblogweb.github.io/search/'" class="btn btn-primary">
-              <ion-icon name="search-outline"></ion-icon>
-
-              <span>Search Blogs</span>
+            <button class="menu-close-btn" data-menu-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
             </button>
 
           </div>
 
-        </div>
-      </section>
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="https://ashfaquehossainabir.github.io/my-cv/" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="https://ashfaquehossainabir.github.io/" class="navbar-link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="https://coderblogweb.github.io/my-blogs/" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="https://coderblogweb.github.io/contact/" class="navbar-link">Contact</a>
+            </li>
+
+          </ul>
+
+          <ul class="navbar-social-list">
+
+            <li>
+              <a href="https://twitter.com/ashfaquertc70" class="navbar-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/ashfaquertx" class="navbar-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/ashfaque-hossain-91151723b/" class="navbar-social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/tesszedox/" class="navbar-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/channel/UCOPh7wtyJgve_YknUFXp0HA/about" class="navbar-social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+    </header>
 
 
 
 
 
-      <!-- 
-        - #Blogs
-      -->
+    <main>
+      <article>
 
-      <section class="upcoming">
-        <div class="container">
+        <!-- 
+          - #HERO
+        -->
 
-          <div class="flex-wrapper">
+        <section class="hero">
+          <div class="container">
 
-            <div class="title-wrapper">
-              <p class="section-subtitle">Blogs</p>
+            <div class="hero-content">
 
-              <h2 class="h2 section-title">My Recent Blogs</h2>
+              <p class="hero-subtitle">Coder Blog</p>
+
+              <h1 class="h1 hero-title">
+                The <strong>Tech</strong> Expert
+              </h1>
+
+              <div class="meta-wrapper">
+
+                <div class="badge-wrapper">
+                  <div class="badge badge-fill">HTML</div>
+
+                  <div class="badge badge-outline">CSS</div>
+
+                  <div class="badge badge-fill">Javascript</div>
+
+                  <div class="badge badge-outline">PHP</div>
+                </div>
+
+              </div>
+
+              <button onclick="location.href='https://coderblogweb.github.io/search/'" class="btn btn-primary">
+                <ion-icon name="search-outline"></ion-icon>
+
+                <span>Search Blogs</span>
+              </button>
+
             </div>
+
+          </div>
+        </section>
+
+
+
+
+
+        <!-- 
+          - #Blogs
+        -->
+
+        <section class="upcoming">
+          <div class="container">
+
+            <div class="flex-wrapper">
+
+              <div class="title-wrapper">
+                <p class="section-subtitle">Blogs</p>
+
+                <h2 class="h2 section-title">My Recent Blogs</h2>
+              </div>
+
+              <ul class="filter-list">
+                  
+                <li>
+                  <button onclick="filterContent('movie-card')" class="filter-btn">All</button>
+                </li>
+
+                <li>
+                  <button onclick="filterContent('investigation')" class="filter-btn">Investigation</button>
+                </li>
+
+                <li>
+                  <button onclick="filterContent('system')" class="filter-btn">System</button>
+                </li>
+
+                <li>
+                  <button onclick="filterContent('javascript')" class="filter-btn">Javascript</button>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <ul class="movies-list  has-scrollbar">
+
+              <li>
+                <div class="movie-card javascript">
+
+                  <a href="https://coderblogweb.github.io/my-blogs/blogs/password%20validation%20in%20javascript.html">
+                    <figure class="card-banner">
+                      <img src="./assets/images/blog_thumb_01.png" alt="Password validation in javascript">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="https://coderblogweb.github.io/my-blogs/blogs/password%20validation%20in%20javascript.html">
+                      <h3 class="card-title">Password validation in javascript</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Javascript</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">23 April 2023</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card investigation">
+
+                  <a href="https://coderblogweb.github.io/my-blogs/blogs/url-obfuscation-with-decimal-ip-address.html">
+                    <figure class="card-banner">
+                      <img src="./assets/images/blog_thumb_02.png" alt="url obfuscation">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="https://coderblogweb.github.io/my-blogs/blogs/url-obfuscation-with-decimal-ip-address.html">
+                      <h3 class="card-title">URL Obfuscation With Decimal IP Address</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Investigation</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">30 April 2023</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+              
+              <li>
+                <div class="movie-card system">
+
+                  <a href="https://coderblogweb.github.io/system-design/">
+                    <figure class="card-banner">
+                      <img src="./assets/images/blog_thumb_03.png" alt="system-design">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="https://coderblogweb.github.io/system-design/">
+                      <h3 class="card-title">System design in bangla</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">System</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">04 September 2024</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+
+
+
+
+        <!-- 
+          - #Download PDF
+        -->
+
+        <section class="service">
+          <div class="container">
+
+            <div class="service-banner">
+              <figure>
+                <img src="./assets/images/download_pdf.png" alt="Download Data Structures Using C PDF">
+              </figure>
+
+              <a href="./assets/files/Data Structures Using C.pdf" download class="service-btn">
+                <span>Download</span>
+
+                <ion-icon name="download-outline"></ion-icon>
+              </a>
+            </div>
+
+            <div class="service-content">
+
+              <p class="service-subtitle">Data Structures PDF</p>
+
+              <h2 class="h2 service-title">Download Data Structures using C</h2>
+
+              <p class="service-text">
+                You can download Data Structures using C Languages for free. Hit the "Download" Button below to save PDF File on your device.
+              </p>
+
+              <ul class="service-list">
+
+                <li>
+                  <div class="service-card">
+
+                    <div class="card-icon">
+                      <ion-icon name="tv"></ion-icon>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">Watch on your Desktop</h3>
+
+                      <p class="card-text">
+                        Watch this E-Book and practice these exercises to develop your skills.
+                      </p>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="service-card">
+
+                    <div class="card-icon">
+                      <ion-icon name="videocam"></ion-icon>
+                    </div>
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">Watch on Youtube channels</h3>
+
+                      <p class="card-text">
+                        Watch many youtube video tutorials and practice more. Best of luck Buddy!!
+                      </p>
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+        </section>
+
+
+
+
+
+        <!-- 
+          - #Featured Blogs
+        -->
+
+        <section class="top-rated">
+          <div class="container">
+
+            <p class="section-subtitle">Featured Blogs</p>
+
+            <h2 class="h2 section-title">Popular Articles</h2>
 
             <ul class="filter-list">
 
@@ -235,198 +470,502 @@
                 <button class="filter-btn">Javascript</button>
               </li>
 
+              <li>
+                <button class="filter-btn">PHP</button>
+              </li>
+
+            </ul>
+
+            <ul class="movies-list">
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
             </ul>
 
           </div>
+        </section>
 
-          <ul class="movies-list  has-scrollbar">
 
-            <li>
-              <div class="movie-card">
 
-                <a href="https://coderblogweb.github.io/my-blogs/blogs/password%20validation%20in%20javascript.html">
-                  <figure class="card-banner">
-                    <img src="./assets/images/blog_thumb_01.png" alt="Password validation in javascript">
-                  </figure>
-                </a>
 
-                <div class="title-wrapper">
-                  <a href="https://coderblogweb.github.io/my-blogs/blogs/password%20validation%20in%20javascript.html">
-                    <h3 class="card-title">Password validation in javascript</h3>
-                  </a>
-                </div>
 
-                <div class="card-meta">
-                  <div class="badge badge-outline">Javascript</div>
+        <!-- 
+          - #More Blogs
+        -->
 
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
+        <section class="tv-series">
+          <div class="container">
 
-                    <time datetime="PT137M">23 April 2023</time>
-                  </div>
-                </div>
+            <p class="section-subtitle">More Blogs</p>
 
-              </div>
-            </li>
+            <h2 class="h2 section-title">See More Articles</h2>
 
-            <li>
-              <div class="movie-card">
+            <ul class="movies-list">
 
-                <a href="https://coderblogweb.github.io/my-blogs/blogs/url-obfuscation-with-decimal-ip-address.html">
-                  <figure class="card-banner">
-                    <img src="./assets/images/blog_thumb_02.png" alt="url obfuscation">
-                  </figure>
-                </a>
+              <li>
+                <div class="movie-card">
 
-                <div class="title-wrapper">
-                  <a href="https://coderblogweb.github.io/my-blogs/blogs/url-obfuscation-with-decimal-ip-address.html">
-                    <h3 class="card-title">URL Obfuscation With Decimal IP Address</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Investigation</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">30 April 2023</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-            
-            <li>
-              <div class="movie-card">
-
-                <a href="https://coderblogweb.github.io/system-design/">
-                  <figure class="card-banner">
-                    <img src="./assets/images/blog_thumb_03.png" alt="system-design">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="https://coderblogweb.github.io/system-design/">
-                    <h3 class="card-title">System design in bangla</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">System</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">04 September 2024</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
                   <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
                   </a>
-                </div>
 
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
                   </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div class="movie-card">
 
-          </ul>
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
 
-        </div>
-      </section>
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="movie-card">
+
+                  <a href="#">
+                    <figure class="card-banner">
+                      <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
+                    </figure>
+                  </a>
+
+                  <div class="title-wrapper">
+                    <a href="#">
+                      <h3 class="card-title">Coming Soon</h3>
+                    </a>
+                  </div>
+
+                  <div class="card-meta">
+                    <div class="badge badge-outline">Category</div>
+
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT137M">DD MM YYYY</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
 
 
 
 
 
-      <!-- 
-        - #Download PDF
-      -->
+        <!-- 
+          - #Get Notifications
+        -->
 
-      <section class="service">
+        <section class="cta">
+          <div class="container">
+
+            <div class="title-wrapper">
+              <h2 class="cta-title">Get Notifications</h2>
+
+              <p class="cta-text">
+                Enter your email to notify new release articles.
+              </p>
+            </div>
+
+            <form name="submit-to-google-sheet" class="cta-form" method="POST">
+              <input type="email" name="Email" required placeholder="Enter your email" class="email-field">
+
+              <button type="submit" class="cta-form-btn">Get started</button>
+              <span id="msg"></span>
+            </form>
+
+          </div>
+        </section>
+
+      </article>
+    </main>
+
+
+
+
+
+    <!-- 
+      - #FOOTER
+    -->
+
+    <footer class="footer">
+
+      <div class="footer-top">
         <div class="container">
 
-          <div class="service-banner">
-            <figure>
-              <img src="./assets/images/download_pdf.png" alt="Download Data Structures Using C PDF">
-            </figure>
+          <div class="footer-brand-wrapper">
 
-            <a href="./assets/files/Data Structures Using C.pdf" download class="service-btn">
-              <span>Download</span>
-
-              <ion-icon name="download-outline"></ion-icon>
+            <a href="./index.html" class="logo">
+              <img src="./assets/images/fav_icon.png" height="60" width="60" alt="Coder Blog">
             </a>
-          </div>
 
-          <div class="service-content">
-
-            <p class="service-subtitle">Data Structures PDF</p>
-
-            <h2 class="h2 service-title">Download Data Structures using C</h2>
-
-            <p class="service-text">
-              You can download Data Structures using C Languages for free. Hit the "Download" Button below to save PDF File on your device.
-            </p>
-
-            <ul class="service-list">
+            <ul class="footer-list">
 
               <li>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="tv"></ion-icon>
-                  </div>
-
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Watch on your Desktop</h3>
-
-                    <p class="card-text">
-                      Watch this E-Book and practice these exercises to develop your skills.
-                    </p>
-                  </div>
-
-                </div>
+                <a href="./index.html" class="footer-link">Home</a>
               </li>
 
               <li>
-                <div class="service-card">
+                <a href="https://ashfaquehossainabir.github.io/my-cv/" class="footer-link">About</a>
+              </li>
 
-                  <div class="card-icon">
-                    <ion-icon name="videocam"></ion-icon>
-                  </div>
+              <li>
+                <a href="https://ashfaquehossainabir.github.io/" class="footer-link">Portfolio</a>
+              </li>
 
-                  <div class="card-content">
-                    <h3 class="h3 card-title">Watch on Youtube channels</h3>
+              <li>
+                <a href="https://coderblogweb.github.io/my-blogs/" class="footer-link">Blogs</a>
+              </li>
 
-                    <p class="card-text">
-                      Watch many youtube video tutorials and practice more. Best of luck Buddy!!
-                    </p>
-                  </div>
+              <li>
+                <a href="https://coderblogweb.github.io/contact/" class="footer-link">Contact</a>
+              </li>
 
-                </div>
+            </ul>
+
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="quicklink-wrapper">
+
+            <ul class="quicklink-list">
+
+              <li>
+                <a href="#" class="quicklink-link">Faq</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Help center</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Terms of use</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Privacy</a>
+              </li>
+
+            </ul>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="https://www.facebook.com/ashfaquertx" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://twitter.com/ashfaquertc70" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/tesszedox/" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/in/ashfaque-hossain-91151723b/" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
               </li>
 
             </ul>
@@ -434,581 +973,46 @@
           </div>
 
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #Featured Blogs
-      -->
-
-      <section class="top-rated">
-        <div class="container">
-
-          <p class="section-subtitle">Featured Blogs</p>
-
-          <h2 class="h2 section-title">Popular Articles</h2>
-
-          <ul class="filter-list">
-
-            <li>
-              <button class="filter-btn">HTML</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">CSS</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Javascript</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">PHP</button>
-            </li>
-
-          </ul>
-
-          <ul class="movies-list">
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #More Blogs
-      -->
-
-      <section class="tv-series">
-        <div class="container">
-
-          <p class="section-subtitle">More Blogs</p>
-
-          <h2 class="h2 section-title">See More Articles</h2>
-
-          <ul class="movies-list">
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="movie-card">
-
-                <a href="#">
-                  <figure class="card-banner">
-                    <img src="./assets/images/coming_soon_article.png" alt="Coming soon">
-                  </figure>
-                </a>
-
-                <div class="title-wrapper">
-                  <a href="#">
-                    <h3 class="card-title">Coming Soon</h3>
-                  </a>
-                </div>
-
-                <div class="card-meta">
-                  <div class="badge badge-outline">Category</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT137M">DD MM YYYY</time>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #Get Notifications
-      -->
-
-      <section class="cta">
-        <div class="container">
-
-          <div class="title-wrapper">
-            <h2 class="cta-title">Get Notifications</h2>
-
-            <p class="cta-text">
-              Enter your email to notify new release articles.
-            </p>
-          </div>
-
-          <form name="submit-to-google-sheet" class="cta-form" method="POST">
-            <input type="email" name="Email" required placeholder="Enter your email" class="email-field">
-
-            <button type="submit" class="cta-form-btn">Get started</button>
-            <span id="msg"></span>
-          </form>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-
-        <div class="footer-brand-wrapper">
-
-          <a href="./index.html" class="logo">
-            <img src="./assets/images/fav_icon.png" height="60" width="60" alt="Coder Blog">
-          </a>
-
-          <ul class="footer-list">
-
-            <li>
-              <a href="./index.html" class="footer-link">Home</a>
-            </li>
-
-            <li>
-              <a href="https://ashfaquehossainabir.github.io/my-cv/" class="footer-link">About</a>
-            </li>
-
-            <li>
-              <a href="https://ashfaquehossainabir.github.io/" class="footer-link">Portfolio</a>
-            </li>
-
-            <li>
-              <a href="https://coderblogweb.github.io/my-blogs/" class="footer-link">Blogs</a>
-            </li>
-
-            <li>
-              <a href="https://coderblogweb.github.io/contact/" class="footer-link">Contact</a>
-            </li>
-
-          </ul>
-
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="quicklink-wrapper">
-
-          <ul class="quicklink-list">
-
-            <li>
-              <a href="#" class="quicklink-link">Faq</a>
-            </li>
-
-            <li>
-              <a href="#" class="quicklink-link">Help center</a>
-            </li>
-
-            <li>
-              <a href="#" class="quicklink-link">Terms of use</a>
-            </li>
-
-            <li>
-              <a href="#" class="quicklink-link">Privacy</a>
-            </li>
-
-          </ul>
-
-          <ul class="social-list">
-
-            <li>
-              <a href="https://www.facebook.com/ashfaquertx" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://twitter.com/ashfaquertc70" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.instagram.com/tesszedox/" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.linkedin.com/in/ashfaque-hossain-91151723b/" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
       </div>
-    </div>
 
-    <div class="footer-bottom">
-      <div class="container">
+      <div class="footer-bottom">
+        <div class="container">
 
-        <span class="copyright" style="display: flex;">
-          &copy; <p id="year" style="margin-right: 7px; margin-left: 3px;"></p> <a href="#">Coder Blog</a>. All Rights Reserved
-        </span>
+          <span class="copyright" style="display: flex;">
+            &copy; <p id="year" style="margin-right: 7px; margin-left: 3px;"></p> <a href="#">Coder Blog</a>. All Rights Reserved
+          </span>
 
+        </div>
       </div>
-    </div>
 
-  </footer>
-
-
-
-
-
-  <!-- 
-    - #GO TO TOP
-  -->
-
-  <a href="#top" class="go-top" data-go-top>
-    <ion-icon name="chevron-up"></ion-icon>
-  </a>
+    </footer>
 
 
 
 
 
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+    <!-- 
+      - #GO TO TOP
+    -->
 
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
 
-</body>
 
+
+
+
+    <!-- 
+      - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+      - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
 </html>

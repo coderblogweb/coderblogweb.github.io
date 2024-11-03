@@ -10,6 +10,26 @@
 'use strict';
 
 /**
+ * Filtered Contents
+ */
+
+function filterContent(className) {
+    const divs = document.getElementsByClassName('movie-card');
+
+    for(let i = 0; i < divs.length; i++) {
+        let div = divs[i];
+
+        if(div.classList.contains(className)) {
+            div.style.opacity = 1;
+        } else {
+            div.style.opacity = 0.5;
+        }
+    }
+}
+
+
+
+/**
  * navbar variables
  */
 
