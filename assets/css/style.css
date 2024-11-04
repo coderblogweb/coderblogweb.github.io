@@ -241,7 +241,7 @@ body.active { overflow: hidden; }
   padding: 16px 30px;
   border: 2px solid var(--citrine);
   border-radius: 50px;
-  transition: var(--transition-1);
+  transition: 0.3s; /* var(--transition-1) */
 }
 
 .btn > ion-icon { font-size: 18px; }
